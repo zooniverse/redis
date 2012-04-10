@@ -125,6 +125,7 @@ struct redisCommand readonlyCommandTable[] = {
     {"zremrangebyrank",zremrangebyrankCommand,4,0,NULL,1,1,1},
     {"zunionstore",zunionstoreCommand,-4,REDIS_CMD_DENYOOM,zunionInterBlockClientOnSwappedKeys,0,0,0},
     {"zinterstore",zinterstoreCommand,-4,REDIS_CMD_DENYOOM,zunionInterBlockClientOnSwappedKeys,0,0,0},
+    {"zdiffstore",zdiffstoreCommand,-4,REDIS_CMD_DENYOOM,zunionInterBlockClientOnSwappedKeys,0,0,0},
     {"zrange",zrangeCommand,-4,0,NULL,1,1,1},
     {"zrangebyscore",zrangebyscoreCommand,-4,0,NULL,1,1,1},
     {"zrevrangebyscore",zrevrangebyscoreCommand,-4,0,NULL,1,1,1},
