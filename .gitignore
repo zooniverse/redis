@@ -7,6 +7,11 @@
 ./redis-benchmark
 ./redis-check-dump
 ./redis-check-aof
+src/redis-cli
+src/redis-server
+src/redis-benchmark
+src/redis-check-dump
+src/redis-check-aof
 doc-tools
 release
 misc/*
